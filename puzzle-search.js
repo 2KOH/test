@@ -14,7 +14,7 @@ const search = function*(string) {
 const searchText = document.querySelector('#search-text')
 const liList = document.querySelectorAll('#search-text ~ ul > li')
 
-searchText.addEventListerner('input', () => {
+searchText.addEventListener('input', () => {
 	const regExp = new RegExp(`^${ [...search(searchText.value)].join('|') }$`)
 	for (const li of liList) {
 		const id = li.querySelector('a').herf.match(/^puzzle\/(.*).md$/)[1]

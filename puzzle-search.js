@@ -12,12 +12,13 @@ const search = function*(string) {
 }
 
 const searchText = document.querySelector('#search-text')
+const liList = document.querySelector('#search-text').parentNode.parentNode.querySelectorAll('li')
 
 searchText.addEventListener('input', () => {
 	console.log('ok')
-	const regExp = new RegExp(`^${ [...search(searchText.value)].join('|') }$`)
-	for (const li of document.querySelectorAll('#search-text ~ ul > li')) {
-		const id = li.querySelector('a').herf.match(/^puzzle\/(.*).md$/)[1]
+	const regExp = new RegExp(`^(${ [...search(searchText.value)].join('|') })$`)
+	for (const li of liList) {
+		const id = li.querySelector('a').href.match(/puzzle\/(.*?).md$/)[1]
 		li.style.display = regExp.test(id) ? '' : 'none'
 	}
 })

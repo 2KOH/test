@@ -1,2 +1,5 @@
 theme: minima
 lang: ja
+header_pages:
+  - index.md
+  - puzzle-list.md

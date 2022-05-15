@@ -1,6 +1,6 @@
-<img src="sudoku.gif" style="float: right; width: 100px;">
-
 # 数独
+
+<img src="sudoku.gif" style="float: right; width: 100px;">
 
 ## 問題
 - [パズルジャパンオープン 2020](../questions/jwpc2020.md)

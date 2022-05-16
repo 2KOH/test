@@ -29,7 +29,7 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
-  min-height: 100vh;
+  min-height: 200vh;
   flex-direction: column;
   overflow-wrap: break-word;
 }
@@ -279,7 +279,4 @@ table {
     -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-}
-#テスト {
-  color: red;
 }

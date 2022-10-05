@@ -1,5 +1,16 @@
 <form>
-	<input type="email">
-	<input type="password">
-	<button type="submit">OK</button>
+	<input type="password" id="password" placeholder="Password">
+	<button type="submit" id="ok">OK</button>
 </form>
+
+<script>
+/**
+ * @param {text} selector
+ * @returns {Element}
+ */
+const $ = selector => document.querySelector(selector)
+
+$('#ok').addEventListener('click', () => {
+	localStorage.setItem('password', $('#password').value)
+})
+</script>
